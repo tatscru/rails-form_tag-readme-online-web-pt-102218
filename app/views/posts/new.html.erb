@@ -4,19 +4,23 @@
   <!--redirects to posts vs. new + method so it knows we are submitting data via the POST HTTP verb-->
   
   <%= form_tag posts_path do %>
+  
   <label>Post title:</label><br>
   <%= text_field_tag :'post[title]' %><br>
-  <!--<input type="text" id="post_title" name="post[title]"><br>-->
  
   <label>Post description:</label><br>
    <%= text_area_tag :'post[description]' %><br>
+   
+   
+   
+  <!--<input type="text" id="post_title" name="post[title]"><br>-->
   <!--<textarea id="post_description" name="post[description]"></textarea><br>-->
   
   <!--Do not need the hidden auth token/tag b/c form_tag automatically generate s the necessary auth token -->
   <!--<%= hidden_field_tag :authenticity_token, form_authenticity_token %>-->
  
-  <input type="submit" value="Submit Post">
-</form>
+<!--  <input type="submit" value="Submit Post">-->
+<!--</form>-->
 
 <!--<%= params.inspect %>-->
 
