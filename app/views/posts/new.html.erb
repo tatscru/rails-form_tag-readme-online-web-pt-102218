@@ -1,0 +1,41 @@
+<h3>Post Form</h3>
+
+<!--<form action= "<%= posts_path %>" method = "POST">-->
+  <!--redirects to posts vs. new + method so it knows we are submitting data via the POST HTTP verb-->
+  
+  <%= form_tag posts_path do %>
+  
+  <label>Post title:</label><br>
+  <%= text_field_tag :'post[title]' %><br>
+ 
+  <label>Post description:</label><br>
+   <%= text_area_tag :'post[description]' %><br>
+   
+  <%= submit_tag "Submit Post" %>
+<% end %>
+   
+  <!--<input type="text" id="post_title" name="post[title]"><br>-->
+  <!--<textarea id="post_description" name="post[description]"></textarea><br>-->
+  
+  <!--Do not need the hidden auth token/tag b/c form_tag automatically generate s the necessary auth token -->
+  <!--<%= hidden_field_tag :authenticity_token, form_authenticity_token %>-->
+ 
+<!--  <input type="submit" value="Submit Post">-->
+<!--</form>-->
+
+<!--<%= params.inspect %>-->
+
+<!--it "displays a new post form that redirects to the index page, which then contains the submitted post's title and description" do-->
+
+<!--do-->
+<!--    visit new_post_path-->
+<!--    fill_in 'post_title', with: 'My post title'-->
+<!--    fill_in 'post_description', with: 'My post description'-->
+ 
+<!--    click_on 'Submit Post'-->
+
+<!--expect(page.current_path).to eq(posts_path)-->
+<!--    expect(page).to have_content('My post title')-->
+<!--    expect(page).to have_content('My post description')-->
+<!--  end-->
+<!--end-->
