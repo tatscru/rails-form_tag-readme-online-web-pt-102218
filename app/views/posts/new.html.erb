@@ -1,6 +1,7 @@
 <h3>Post Form</h3>
 
 <form action= "<%= posts_path %>" method = "POST">
+  <!--redirects to posts vs. new + method so it knows we are submitting data via the POST HTTP verb-->
   <label>Post title:</label><br>
   <input type="text" id="post_title" name="post[title]"><br>
  
