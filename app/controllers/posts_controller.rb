@@ -7,5 +7,6 @@ class PostsController < ApplicationController
   end 
   
   def create
+    self.create
   end 
 end
