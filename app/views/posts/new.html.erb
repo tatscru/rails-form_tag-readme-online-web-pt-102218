@@ -12,9 +12,8 @@
    <%= text_area_tag :'post[description]' %><br>
   <!--<textarea id="post_description" name="post[description]"></textarea><br>-->
   
-  <!--hidden field -->
-  
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <!--Do not need the hidden auth token/tag b/c form_tag automatically generate s the necessary auth token -->
+  <!--<%= hidden_field_tag :authenticity_token, form_authenticity_token %>-->
  
   <input type="submit" value="Submit Post">
 </form>
